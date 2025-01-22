@@ -75,6 +75,7 @@ def park_vehicle():
     reg_number = request.form.get('reg_number').strip()
     vehicle_type = request.form.get('vehicle_type').strip()
 
+
     if not reg_number or not vehicle_type:
         flash("Please fill out both fields!", "danger")
         return redirect(url_for('index'))
