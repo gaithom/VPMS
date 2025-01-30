@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch localhost",
+            "url": "http://localhost/index.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "firefox",
             "request": "attach",
             "name": "Attach"
         },
